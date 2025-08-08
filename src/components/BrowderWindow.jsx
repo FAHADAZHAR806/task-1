@@ -6,6 +6,12 @@ import {
   RefreshCw,
   Star,
   MoreVertical,
+  Copy,
+  Minus,
+  X,
+  Download,
+  HatGlasses,
+  Trash,
 } from "lucide-react";
 
 export default function BrowserWindow() {
@@ -49,14 +55,14 @@ export default function BrowserWindow() {
           ))}
         </div>
         <div className="controls">
-          <div className="control-button minimize" onClick={handleMinimize}>
-            –
+          <div className="" onClick={handleMinimize}>
+            <Minus />
           </div>
-          <div className="control-button maximize" onClick={handleMaximize}>
-            □
+          <div className="" onClick={handleMaximize}>
+            <Copy />{" "}
           </div>
-          <div className="control-button close" onClick={handleClose}>
-            ×
+          <div className="" onClick={handleClose}>
+            <X />
           </div>
         </div>
       </div>
@@ -69,7 +75,6 @@ export default function BrowserWindow() {
               <ArrowRight className="icon" size={20} />
               <RefreshCw className="icon" size={20} />
               <Star className="icon" size={20} />
-              <MoreVertical className="icon" size={20} />
             </div>
 
             <div className="address-bar-container">
@@ -80,6 +85,12 @@ export default function BrowserWindow() {
                   defaultValue="https://example.com"
                   readOnly
                 />
+              </div>
+              <div className="icons-container1 ">
+                <HatGlasses className="icon" size={20} />
+                <Download className="icon" size={20} />
+                <Trash className="icon" size={20} />
+                <MoreVertical className="icon" size={20} />
               </div>
             </div>
           </div>
